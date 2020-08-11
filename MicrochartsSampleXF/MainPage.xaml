@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms" x:Class="MicrochartsSampleXF.MainPage">
+
+    <StackLayout>
+
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Microcharts Sample" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
+        </Frame>
+
+        <ScrollView>
+            <StackLayout>
+                <microcharts:ChartView x:Name="chartViewBar" HeightRequest="300" />
+                <microcharts:ChartView x:Name="chartViewPie" HeightRequest="300" />
+                <microcharts:ChartView x:Name="chartViewLine" HeightRequest="300" />
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
